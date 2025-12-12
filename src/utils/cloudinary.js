@@ -15,7 +15,7 @@ import fs  from "fs";
        try {
             if(!localFilePath) return null;
             // Upload file to cloudinary
-            const response= await cloudinary.uploader.upload(localFilePaht,{
+            const response= await cloudinary.uploader.upload(localFilePath,{
                 resource_type: "auto",
                 folder: "Chai_or_app",
             });
@@ -44,4 +44,4 @@ import fs  from "fs";
            console.log(error);
        });
     
-   
+   export {uploadONCloudinary}
